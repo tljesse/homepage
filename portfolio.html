@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA=Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Tristan Jesse Design | Portfolio">
+	<meta name="author" content="Tristan Jesse">
+
+	<link rel="icon" href="">
+	<meta property="og:site_name" content="Tristan Jesse Design">
+	<meta property="og:title" content="Electronic Design, Programming and Web Development">
+	<meta property="og:url" content="http://www.tristanjesse.com">
+	<meta property="og:type" content="website">
+
+	<title>Tristan Jesse Design | Portfolio</title>
+
+    <link href="bootstrap-3.3.5/docs/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/page-style.css">
+	<script type="text/javascript" src="css/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script>
+	$(function(){
+		$.stellar({
+			horizontalScrolling: false,
+			verticalOffset: 40
+		});
+	});
+	</script>
+</head>
+
+<body>
+	<div role="navigation" class="nav navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">
+					<img alt="Tristan Jesse" class="img-responsive">
+				</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="./">Home</a></li>
+					<li><a class="smoothScroll" href="#top">Portfolio</a></li>
+					<li><a class="smoothScroll" href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="jumbotron" id="top">
+		<div class="container">
+			<h1>My Portfolio</h1>
+		</div>
+	</div>
+
+	<div class="row vertical-center" id="intro">
+		<div class="container">
+			<img class="img-responsive center" src='img/computer.png'>
+			<h2>What I've Been Doing</h2>
+			<p>These are a few of the projects I've been spending my time with lately. You can also visit my <a href="http://www.upwork.com/o/profiles/users/_~01dbddf061ee8df150/">Upwork Profile</a> to see reviews of my work and a few other things I've been busy with.</p>
+		</div>
+	</div>
+
+	<div class="photo campus vertical-center" data-stellar-background-ration="0.5">
+		<div class="container">
+			<h2>Campus Track</h2>
+			<h3>Web/PCB/μC</h3>
+			<p>Campus Track called on all of my skills with web development, PCB design and microcontroller programming. The key to this project was interaction between each module working flawlessly.</p>
+		</div>
+	</div>
+	<div class="photo divider" data-stellar-background-ratio="0.5"></div>
+	<div class="photo aces vertical-center" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<h2>Easy Aces</h2>
+			<h3>Web/JS</h3>
+			<p>Easy Aces is an HTML5 game built using the phaser engine. My client is pitching this to casinos and needed a way to easily show investors the dynamics of the game in a simulated environment.</p>
+			<p><a class="btn btn-primary btn-lg" href="http://www.tristanjesse.com/EasyAces/gameMulti.html">Play the Game</a></p>
+		</div>
+	</div>
+	<div class="photo divider" data-stellar-background-ratio="0.5"></div>
+	<div class="photo woah vertical-center" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<h2>Go To Woah</h2>
+			<h3>Web/JS/DB</h3>
+			<p>Go To Woah is another HTML5 game built with the phaser framework. Bob Jane, an automotive company in Australia, required a simple game to award prizes and collect user data at a large auto show.</p>
+		</div>
+	</div>
+	<div class="photo divider" data-stellar-background-ratio="0.5"></div>
+	<div id="contact" class="row vertical-center">
+		<div class="container">
+			<h2>Contact Me</h2>
+			<p>Have a project for me, questions about my experience or just want to chat?</p>
+			<p><a class="btn btn-primary btn-lg" href="mailto:tristanljesse@gmail.com">E-mail Me</a></p>
+		</div>
+	</div>
+
+	<script>$(function() {
+		$('.smoothScroll').click(function() {
+			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top
+					}, 500); // speed of the scroll in milliseconds
+				return false;
+				}
+	    	}
+		});
+	});
+	</script>
+	<script src="bootstrap-3.3.5/docs/dist/js/bootstrap-transition.js"></script>
+	<script src="bootstrap-3.3.5/docs/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
