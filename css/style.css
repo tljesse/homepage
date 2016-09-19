@@ -1,3 +1,12 @@
+/*
+Theme Name: tristan-theme
+Theme URI: www.tristanjesse.com
+Description: Wordpress theme used for the website www.tristanjesse.com
+Version: 1.0
+Author: Tristan Jesse
+Author URI: www.tristanjesse.com
+*/
+
 * {
   font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
@@ -12,13 +21,21 @@ body {
   padding-top: 50px;
   //background-color: rgb(222,231,233);
   //background-color: rgb(72,146,195);
-  background: url("../img/surfers_paradise1.jpg") no-repeat fixed, grey;
-  background-position: center;
+  
   padding-top: 50px;
   height: 100%;
   width: 100%;
-  background-size: cover;
   margin-bottom: 0px;
+}
+
+body#index {
+  background: url("../img/surfers_paradise1.jpg") no-repeat fixed, grey;
+  background-position: center;
+  background-size: cover;
+}
+
+body#page {
+  background-color: #152b3a;
 }
 
 .btn:hover {
@@ -48,7 +65,15 @@ body {
   padding-bottom: 0;
 }
 
-.jumbotron {
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+/*******************************
+  Index Styles
+*/
+#index .jumbotron {
 	//background: url("../img/surfers_paradise1.jpg") no-repeat fixed, grey;
 	//background-position: center;
 	padding-top: 50px;
@@ -59,15 +84,15 @@ body {
 	margin-bottom: 0px;
 }
 
-.jumbotron .container {
+#index .jumbotron .container {
 	min-height: 100%;
 }
 
-.jumbotron h1 {
+#index .jumbotron h1 {
 	color: #171C36;
 }
 
-.row {
+#index .row {
 	border-top: 2px solid rgb(137,178,205);
 	//background-color: rgba(72,146,195,0.6);
   background-color: rgba(0,0,0,0.8);
@@ -79,11 +104,11 @@ body {
 	//background-image: linear-gradient(rgb(222,231,233), rgb(72,146,195));
 }
 
-h2 {
+#index h2 {
   color: rgb(255,255,255);
 }
 
-h1.index {
+#index h1 {
 	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-weight: lighter;
   font-size: 250%;
@@ -253,6 +278,78 @@ h1.index {
 img.center {
 	display: block;
 	margin: 0px auto;
+}
+
+/********************************
+    Page Styles
+  */
+#page .jumbotron {
+  height: 50px;
+  margin-bottom: 0;
+  padding-top: 50px;
+  background-color: #152b3a;
+  color:white;
+}
+
+#page .row {
+  height: 100%;
+  //background-color: rgba(0,0,0,0.7);
+  margin-right: 0px;
+}
+
+#page .container h2, #page .container h3, #page .container p {
+  font-weight: bold;
+  font-size: 350%;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-shadow: 0 2px 0 black, 0 0 10px black;
+  color: white;
+}
+
+#page .container h3 {
+  font-size: 200%;
+  text-transform: none;
+}
+
+#page .container p{
+  font-size: 175%;
+  text-transform: none;
+}
+
+#page .vertical-center {
+  min-height: 70%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 70vh; /* These two lines are counted as one :-)       */
+}
+
+.photo {
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 70%;
+  position: relative;
+}
+
+.divider {
+  height: 30%;
+  //background-color: rgba(0,0,0,0.7);
+}
+
+.campus {
+  background-image: url('../img/campus.jpg');
+}
+
+.aces {
+  background-image: url('../img/easy.jpg');
+}
+
+.starbf {
+  background-image: url('../img/starbf.jpg');
+}
+
+.woah {
+  background-image: url('../img/goToWoah.jpg');
 }
 
 @media (max-width: 979px) {

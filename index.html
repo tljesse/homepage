@@ -5,8 +5,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA=Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Tristan Jesse Design">
+	<meta name="description" content="Web Development and Electrical Design. Building websites, web apps, electronics and everything inbetween.">
 	<meta name="author" content="Tristan Jesse">
+	<meta name="keywords" content="web development, web, development, programming, engineering, computer, electronics, design, web design, web design services, developer, wordpress, html, html5, javascript, node, mongo, php, sql, mysql"
 
 	<link rel="icon" href="">
 	<meta property="og:site_name" content="Tristan Jesse Design">
@@ -19,9 +20,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
 </head>
 
-<body>
+<body id="index">
 	<div role="navigation" class="nav navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
@@ -45,7 +47,7 @@
 		</div>
 	</div>
 
-	<div class="jumbotron" id="home">
+	<div class="jumbotron index" id="home">
 		<div class="container">
 			<h1>Tristan Jesse</h1>
 			<p>Web Development and Electronic Design</p>
@@ -99,7 +101,7 @@
 		<div class="container">
 			<h2 class="wordwrap">Web Development</h2>
 			<div class="col-lg-3">
-				<img src="img/webdev-white.png" class="img-responsive center">
+				<img src="img/webdev-color.png" class="img-responsive center">
 			</div>
 			<div class="col-lg-9 vertical-center">
 				<div class="text-centered">
@@ -172,6 +174,8 @@
 	    	}
 		});
 	});
+	
+	$("div.navbar-fixed-top").autoHidingNavbar();
 	</script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
